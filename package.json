@@ -3,9 +3,8 @@
   "version": "0.0.7",
   "description": "Common configuration files for JavaScript projects",
   "main": "lib/index.js",
-  "type": "module",
   "scripts": {
-    "clean": "rimraf lib/",
+    "clean": "rimraf lib/*",
     "build": "cross-env NODE_ENV=production tsc -p ./src",
     "build:watch": "cross-env NODE_ENV=development tsc -w -p ./src",
     "eslint:check": "eslint --ignore-pattern \"!.eslintrc.js\" ./*.js src/**/*.js test/**/*.tsx",
