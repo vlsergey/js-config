@@ -14,7 +14,7 @@ export default class HelloContent extends React.Component<IHelloContentProps> {
     return false;
   }
 
-  public render() : ReactNode {
+  public render() : React.ReactNode {
     return <div>Hello { this.props.name }!</div>;
   }
 }

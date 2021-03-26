@@ -1,12 +1,16 @@
 {
   "compilerOptions": {
-    "outDir": "./lib/",
-    "noImplicitAny": true,
-    "module": "es6",
-    "target": "es5",
+    "allowJs": true,
+    "checkJs": true,
+    "declaration": true,
+    "declarationMap": true,
     "jsx": "react",
-    "allowJs": true
+    "lib": [ "es6" ],
+    "module": "CommonJS",
+    "noImplicitAny": true,
+    "outDir": "./lib/",
+    "target": "ES5",
   },
-  "include": ["src/**/*", "test/**/*", ".eslintrc.js", "babel.config.js"],
+  "include": [".eslintrc.js"],
   "exclude": ["node_modules", "**/*.spec.ts"]
 }

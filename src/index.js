@@ -1,9 +1,8 @@
 /* eslint-env node */
 /* eslint @typescript-eslint/no-unsafe-assignment: 0 */
 
-import babel from './babel';
-import eslint from './eslint';
+import * as eslint from './eslint';
 
-const ALL = { babel, eslint };
+const ALL = { eslint };
 
 export default ALL;
