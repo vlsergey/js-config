@@ -1,5 +1,5 @@
 /* eslint-disable */
 module.exports = {
-  eslint: require('eslint'),
-  karma: require('karma'),
+  eslint: require('./eslint'),
+  karma: require('./karma'),
 }
