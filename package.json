@@ -3,6 +3,7 @@
   "version": "0.0.7",
   "description": "Common configuration files for JavaScript projects",
   "main": "lib/index.js",
+  "type": "module",
   "scripts": {
     "clean": "rimraf lib/",
     "build": "cross-env NODE_ENV=production tsc -p ./src",
@@ -12,7 +13,7 @@
     "test": "cross-env NODE_ENV=development karma start karma.conf.js --single-run",
     "test:watch": "cross-env NODE_ENV=development karma start karma.conf.js --no-single-run",
     "test:watch:chrome": "cross-env NODE_ENV=development karma start karma.conf.js --no-single-run --browsers Chrome",
-    "preversion": "npm run eslint:fix && npm run clean && npm run build",
+    "preversion": "npm run eslint:fix && npm run test && npm run clean && npm run build",
     "version": "npm publish --access=public",
     "postversion": "git push && git push --tags"
   },
