@@ -1,19 +1,10 @@
-import * as React from 'react';
+import React, { PureComponent } from 'react';
 
 interface IHelloContentProps {
 	name: string;
 }
 
-export default class HelloContent extends React.Component<IHelloContentProps> {
-
-  constructor( props: IHelloContentProps ) {
-    super( props );
-  }
-
-  public shouldComponentUpdate() : boolean {
-    return false;
-  }
-
+export default class HelloContent extends PureComponent<IHelloContentProps> {
   public render() : React.ReactNode {
     return <div>Hello { this.props.name }!</div>;
   }

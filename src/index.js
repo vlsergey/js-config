@@ -1,8 +1,7 @@
 /* eslint-env node */
 /* eslint @typescript-eslint/no-unsafe-assignment: 0 */
 
-import * as eslint from './eslint';
+import eslint from './eslint';
+import karma from './karma';
 
-const ALL = { eslint };
-
-export default ALL;
+export { eslint, karma };

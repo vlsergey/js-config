@@ -1,16 +1,18 @@
 {
   "compilerOptions": {
     "allowJs": true,
-    "checkJs": true,
     "declaration": true,
     "declarationMap": true,
+    "esModuleInterop": true,
     "jsx": "react",
     "lib": [ "es6" ],
-    "module": "CommonJS",
+    "module": "es6",
+    "moduleResolution": "node",
     "noImplicitAny": true,
     "outDir": "./lib/",
+    "sourceMap": true,
     "target": "ES5",
   },
-  "include": [".eslintrc.js"],
+  "include": [".eslintrc.js", "karma.conf.js"],
   "exclude": ["node_modules", "**/*.spec.ts"]
 }
