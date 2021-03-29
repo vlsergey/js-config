@@ -119,6 +119,9 @@ module.exports = {
     'no-regex-spaces': 1,
     /* disallow trailing whitespace at the end of lines */
     'no-trailing-spaces': 1,
+    /* Disallow Unused Variables (no-unused-vars) */
+    /* Using @typescript-eslint/no-unused-vars instead */
+    'no-unused-vars': 0,
     /* disallow ternary operators when simpler alternatives exist */
     'no-unneeded-ternary': 1,
     /* Disallow unnecessary computed property keys on objects */
