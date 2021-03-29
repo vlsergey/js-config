@@ -181,6 +181,10 @@ module.exports = {
     /* Require or disallow Yoda Conditions */
     'yoda': [ 1, 'never' ],
 
+    /* Enforces unbound methods are called with their expected scope */
+    // Disable due to @boundMethod from autobind package usage
+    '@typescript-eslint/unbound-method': 0,
+
     /* Forbid a module from importing itself */
     'import/no-self-import': 2,
     /* Reports:
