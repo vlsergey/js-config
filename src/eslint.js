@@ -106,7 +106,8 @@ module.exports = {
     /* disallow assigning to imported bindings */
     'no-import-assign': 2,
     /* disallow this keywords outside of classes or class-like objects */
-    'no-invalid-this': 2,
+    // replaced by @typescript-eslint/no-invalid-this
+    'no-invalid-this': 0,
     /* disallow if statements as the only statement in else blocks */
     'no-lonely-if': 1,
     /* disallow multiple spaces */
@@ -182,8 +183,9 @@ module.exports = {
     'yoda': [ 1, 'never' ],
 
     /* Enforces unbound methods are called with their expected scope */
-    // Disable due to @boundMethod from autobind package usage
-    '@typescript-eslint/unbound-method': 0,
+    '@typescript-eslint/unbound-method': 2,
+    /* Disallow this keywords outside of classes or class-like objects */
+    '@typescript-eslint/no-invalid-this': 2,
 
     /* Forbid a module from importing itself */
     'import/no-self-import': 2,
