@@ -3,6 +3,7 @@
     "allowJs": true,
     "declaration": true,
     "declarationMap": true,
+    "downlevelIteration": true,
     "esModuleInterop": true,
     "jsx": "react",
     "importHelpers" : true,
