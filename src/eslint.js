@@ -16,8 +16,6 @@ module.exports = {
   },
   extends: [
     'eslint:recommended',
-    'plugin:import/errors',
-    'plugin:import/warnings',
     'plugin:@typescript-eslint/recommended',
     'plugin:@typescript-eslint/recommended-requiring-type-checking',
     'plugin:react/recommended',
@@ -186,28 +184,6 @@ module.exports = {
     '@typescript-eslint/unbound-method': 2,
     /* Disallow this keywords outside of classes or class-like objects */
     '@typescript-eslint/no-invalid-this': 2,
-
-    /* Forbid a module from importing itself */
-    'import/no-self-import': 2,
-    /* Reports:
-      modules without any exports
-      individual exports not being statically imported or requireed from other modules in the same project */
-    'import/no-unused-modules': [ 1, {
-      missingExports: true,
-      unusedExports: true,
-      src: [ './src/' ],
-      ignoreExports: [
-        // Uncomment those on per-project level
-        // '.*.js',
-        // '*.conf.*',
-        // '*.config.*',
-        'src/index.js',
-        // common name for flow types
-        // '**/*Type.js',
-      ],
-    } ],
-    /* Prevent unnecessary path segments in import and require statements. */
-    'import/no-useless-path-segments': 1,
 
     /* Enforce all defaultProps have a corresponding non-required PropType */
     /* Does not work well with flow */
