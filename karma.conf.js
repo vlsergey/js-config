@@ -1,4 +1,5 @@
 /* eslint-disable */
+const path = require( 'path' );
 
 const imported = require( './src/karma.js' );
 module.exports = config => {
@@ -8,5 +9,11 @@ module.exports = config => {
     files: [
       'test/**/*Test.tsx',
     ],
+
+    webpack: {
+      output: {
+          path: path.resolve(__dirname, '../lib/'),
+      },
+    }
   })
 };
