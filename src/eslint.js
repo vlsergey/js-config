@@ -244,12 +244,6 @@ module.exports = {
     'react/void-dom-elements-no-children': 2,
   },
   settings: {
-    'import/resolver': {
-      node: {
-        extensions: [ '.js', '.jsx', '.ts', '.tsx' ],
-        moduleDirectory: [ 'node_modules', 'src' ],
-      },
-    },
     'react': {
       version: 'detect',
     },
