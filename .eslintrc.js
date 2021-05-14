@@ -1,9 +1,9 @@
-/* eslint-disable */
-const imported = require( './src/eslint.js' );
+/* eslint-disable-next-line */
 module.exports = {
-  ...imported,
+  extends: [
+    './src/eslint.js',
+  ],
   parserOptions: {
-    ...imported,
-    project: ['./tsconfig.json','./src/tsconfig.json','./test/tsconfig.json'],
+    project: [ './tsconfig.json', './src/tsconfig.json', './test/tsconfig.json' ],
   }
 };

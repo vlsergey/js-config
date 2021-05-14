@@ -1,7 +1,7 @@
 import React, { PureComponent } from 'react';
 
 interface IHelloContentProps {
-	name: string;
+	name : string;
 }
 
 export default class HelloContent extends PureComponent<IHelloContentProps> {
