@@ -10,7 +10,7 @@ module.exports = {
     /* Better to place after props due to Atom/react plugin problem */
     'react/jsx-closing-bracket-location': [ 1, 'after-props' ],
     /* <...> disallow spaces inside of curly braces in JSX attributes and expressions.*/
-    'react/jsx-curly-spacing': [ 1, { when: 'never' } ],
+    'react/jsx-curly-spacing': [ 1, {when: 'never'} ],
     /* Enforce boolean attributes notation in JSX */
     'react/jsx-boolean-value': 1,
     /* Enforce or disallow spaces inside of curly braces in JSX attributes and expressions. */
@@ -27,7 +27,7 @@ module.exports = {
     'react/jsx-props-no-multi-spaces': 1,
     'react/jsx-sort-props': 1,
     /* Validate whitespace in and around the JSX opening and closing brackets */
-    'react/jsx-tag-spacing': [ 1, { beforeClosing: 'never' } ],
+    'react/jsx-tag-spacing': [ 1, {beforeClosing: 'never'} ],
     /* Prevent using this.state within a this.setState */
     'react/no-access-state-in-setstate': 1,
     /* Prevent problem with children and props.dangerouslySetInnerHTML */

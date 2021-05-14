@@ -44,7 +44,7 @@ module.exports = {
     /* require or disallow spacing between function identifiers and their invocations */
     'func-call-spacing': [ 1, 'never' ],
 
-    'indent': [ 1, 2, { FunctionDeclaration: { body: 1, parameters: 2 }, ignoreComments: false } ],
+    'indent': [ 1, 2, {FunctionDeclaration: {body: 1, parameters: 2}, ignoreComments: false} ],
 
     /* enforce consistent spacing between keys and values in object literal properties */
     'key-spacing': 1,
@@ -52,7 +52,7 @@ module.exports = {
     'keyword-spacing': 1,
 
     /* require or disallow an empty line between class members */
-    'lines-between-class-members': [ 1, 'always', { exceptAfterSingleLine: true } ],
+    'lines-between-class-members': [ 1, 'always', {exceptAfterSingleLine: true} ],
 
     /* Require parentheses when invoking a constructor with no arguments */
     'new-parens': 1,
@@ -132,19 +132,19 @@ module.exports = {
 
     /* require quotes around object literal property names */
     'quote-props': [ 1, 'consistent-as-needed' ],
-    'quotes': [ 1, 'single' ],
+    'quotes': [ 1, 'single', {allowTemplateLiterals: true} ],
 
     /* Enforce spacing between rest and spread operators and their expressions */
     'rest-spread-spacing': 1,
 
-    'semi': [ 1, 'always' ],
+    'semi': 1,
     'semi-spacing': 1,
     /* enforce sorted import declarations within modules */
-    'sort-imports': [ 1, { ignoreCase: true } ],
+    'sort-imports': [ 1, {ignoreCase: true} ],
     'space-before-function-paren': [ 1, 'never' ],
-    'space-before-blocks': [ 1, 'always' ],
-    'space-in-parens': [ 1, 'always' ],
-    'space-infix-ops': [ 1, { int32Hint: false } ],
+    'space-before-blocks': 1,
+    'space-in-parens': 1,
+    'space-infix-ops': 1,
     /* enforce consistent spacing after the // or /* in a comment */
     'spaced-comment': 1,
     'strict': [ 1, 'never' ],
