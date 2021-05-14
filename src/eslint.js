@@ -42,13 +42,8 @@ module.exports = {
     'block-spacing': [ 1, 'always' ],
 
     /* require or disallow trailing commas */
-    'comma-dangle': [ 1, {
-      arrays: 'only-multiline',
-      objects: 'only-multiline',
-      imports: 'only-multiline',
-      exports: 'only-multiline',
-      functions: 'never'
-    } ],
+    // superseded by @typescript-eslint/comma-dangle
+    'comma-dangle': 0,
 
     /* enforce consistent spacing before and after commas */
     'comma-spacing': 1,
@@ -184,6 +179,14 @@ module.exports = {
     '@typescript-eslint/unbound-method': 2,
     /* Disallow this keywords outside of classes or class-like objects */
     '@typescript-eslint/no-invalid-this': 2,
+    /* Require or disallow trailing comma */
+    '@typescript-eslint/comma-dangle': [ 1, {
+      arrays: 'only-multiline',
+      objects: 'only-multiline',
+      imports: 'only-multiline',
+      exports: 'only-multiline',
+      functions: 'never'
+    } ],
 
     /* Enforce all defaultProps have a corresponding non-required PropType */
     /* Does not work well with flow */
