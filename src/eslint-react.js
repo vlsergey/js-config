@@ -28,6 +28,9 @@ module.exports = {
     'react/jsx-sort-props': 1,
     /* Validate whitespace in and around the JSX opening and closing brackets */
     'react/jsx-tag-spacing': [ 1, {beforeClosing: 'never'} ],
+    /* Prevent React to be incorrectly marked as unused */
+    /* Disabled per https://ru.reactjs.org/blog/2020/09/22/introducing-the-new-jsx-transform.html#eslint */
+    'react/jsx-uses-react': 0,
     /* Prevent using this.state within a this.setState */
     'react/no-access-state-in-setstate': 1,
     /* Prevent problem with children and props.dangerouslySetInnerHTML */
@@ -50,6 +53,9 @@ module.exports = {
     'react/no-unused-state': 1,
     /* Prevent usage of setState in componentWillUpdate */
     'react/no-will-update-set-state': 2,
+    /* Prevent missing React when using JSX */
+    /* Disabled per https://ru.reactjs.org/blog/2020/09/22/introducing-the-new-jsx-transform.html#eslint */
+    'react/react-in-jsx-scope': 0,
     /* Enforce React components to have a shouldComponentUpdate method */
     'react/require-optimization': 1,
     /* Enforce ES5 or ES6 class for returning value in render function */

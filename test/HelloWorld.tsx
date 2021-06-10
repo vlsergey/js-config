@@ -5,7 +5,7 @@ interface IHelloContentProps {
 }
 
 export default class HelloContent extends PureComponent<IHelloContentProps> {
-  public render (): React.ReactNode {
+  override render (): React.ReactNode {
     return <div>Hello { this.props.name }!</div>;
   }
 }
