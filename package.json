@@ -53,6 +53,7 @@
     "eslint": "^7.28.0",
     "eslint-plugin-promise": "^5.1.0",
     "eslint-plugin-react": "^7.24.0",
+    "eslint-plugin-react-hooks": "^4.2.0",
     "eslint-watch": "^7.0.0",
     "jsdom": "^16.6.0",
     "karma": "^6.3.4",

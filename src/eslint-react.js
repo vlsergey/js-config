@@ -1,6 +1,9 @@
 /* eslint-disable-next-line */
 module.exports = {
-  extends: [ 'plugin:react/recommended' ],
+  extends: [
+    'plugin:react/recommended',
+    'plugin:react-hooks/recommended',
+  ],
 
   rules: {
     /* Enforce all defaultProps have a corresponding non-required PropType */
