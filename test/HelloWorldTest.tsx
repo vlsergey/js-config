@@ -1,7 +1,8 @@
 import {assert} from 'chai';
-import HelloWorld from './HelloWorld';
 import React from 'react';
 import {renderIntoDocument} from 'react-dom/test-utils';
+
+import HelloWorld from './HelloWorld';
 
 describe('HelloWold', () => {
 
