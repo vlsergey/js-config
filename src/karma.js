@@ -36,6 +36,13 @@ module.exports = function( config ) {
             include: /(src|test)/,
             exclude: /node_modules/,
             loader: 'ts-loader',
+            options: {
+              compilerOptions: {
+                declaration: true,
+                declarationMap: true,
+                target: 'es6',
+              },
+            }
           },
         ],
       },
