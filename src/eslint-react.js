@@ -11,15 +11,15 @@ module.exports = {
     'react/default-props-match-prop-types': 0,
     /* Validate closing bracket location in JSX */
     /* Better to place after props due to Atom/react plugin problem */
-    'react/jsx-closing-bracket-location': [ 1, 'after-props' ],
+    'react/jsx-closing-bracket-location': [1, 'after-props'],
     /* <...> disallow spaces inside of curly braces in JSX attributes and expressions.*/
-    'react/jsx-curly-spacing': [ 1, {when: 'never'} ],
+    'react/jsx-curly-spacing': [1, {when: 'never'}],
     /* Enforce boolean attributes notation in JSX */
     'react/jsx-boolean-value': 1,
     /* Enforce or disallow spaces inside of curly braces in JSX attributes and expressions. */
     'react/jsx-child-element-spacing': 1,
     /* Enforce or disallow spaces around equal signs in JSX attributes */
-    'react/jsx-equals-spacing': [ 1, 'never' ],
+    'react/jsx-equals-spacing': [1, 'never'],
     /* No .bind() or Arrow Functions in JSX Props (react/jsx-no-bind) */
     'react/jsx-no-bind': 1,
     /* Prevent duplicate properties in JSX */
@@ -30,7 +30,7 @@ module.exports = {
     'react/jsx-props-no-multi-spaces': 1,
     'react/jsx-sort-props': 1,
     /* Validate whitespace in and around the JSX opening and closing brackets */
-    'react/jsx-tag-spacing': [ 1, {beforeClosing: 'never'} ],
+    'react/jsx-tag-spacing': [1, {beforeClosing: 'never'}],
     /* Prevent React to be incorrectly marked as unused */
     /* Disabled per https://ru.reactjs.org/blog/2020/09/22/introducing-the-new-jsx-transform.html#eslint */
     'react/jsx-uses-react': 0,

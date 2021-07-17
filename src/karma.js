@@ -1,33 +1,32 @@
-/* eslint-disable */
-const path = require( 'path' );
+/* eslint-disable-next-line */
+module.exports = function (config) {
+  /* eslint-disable-next-line */
+  config.set({
+    browsers: ['jsdom'],
+    frameworks: ['mocha', 'webpack'],
 
-module.exports = function( config ) {
-  config.set( {
-    browsers: [ 'jsdom' ],
-    frameworks: [ 'mocha', 'webpack' ],
+    plugins: ['karma-*'],
 
-    plugins: [ 'karma-*' ],
-
-    reporters: [ 'mocha' ],
+    reporters: ['mocha'],
 
     mochaReporter: {
       output: 'autowatch',
     },
 
     preprocessors: {
-      'src/**/*.ts': [ 'webpack', 'sourcemap' ],
-      'src/**/*.tsx': [ 'webpack', 'sourcemap' ],
-      'src/**/*.js': [ 'webpack', 'sourcemap' ],
-      'src/**/*.jsx': [ 'webpack', 'sourcemap' ],
-      'test/**/*.ts': [ 'webpack', 'sourcemap' ],
-      'test/**/*.tsx': [ 'webpack', 'sourcemap' ],
-      'test/**/*.js': [ 'webpack', 'sourcemap' ],
-      'test/**/*.jsx': [ 'webpack', 'sourcemap' ],
+      'src/**/*.ts': ['webpack', 'sourcemap'],
+      'src/**/*.tsx': ['webpack', 'sourcemap'],
+      'src/**/*.js': ['webpack', 'sourcemap'],
+      'src/**/*.jsx': ['webpack', 'sourcemap'],
+      'test/**/*.ts': ['webpack', 'sourcemap'],
+      'test/**/*.tsx': ['webpack', 'sourcemap'],
+      'test/**/*.js': ['webpack', 'sourcemap'],
+      'test/**/*.jsx': ['webpack', 'sourcemap'],
     },
 
     webpack: {
       mode: 'development',
-      devtool: "inline-source-map",
+      devtool: 'inline-source-map',
 
       module: {
         rules: [
@@ -51,5 +50,5 @@ module.exports = function( config ) {
         extensions: ['.tsx', '.ts', '.js', '.jsx'],
       },
     },
-  } );
+  });
 };

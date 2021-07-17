@@ -4,27 +4,28 @@ module.exports = {
     browser: true,
     es6: true,
   },
-  extends: [ 'eslint:recommended' ],
+  extends: ['eslint:recommended'],
   globals: {
     require: true,
   },
-  plugins: [ 'promise' ],
+  plugins: ['promise'],
 
   rules: {
     /* Require braces in arrow function body */
-    'arrow-body-style': [ 1, 'as-needed' ],
-    'array-bracket-spacing': [ 1, 'always' ],
+    'arrow-body-style': [1, 'as-needed'],
+    /* Disallow or enforce spaces inside of brackets */
+    'array-bracket-spacing': [1],
     /* enforce line breaks after opening and before closing array brackets */
-    'array-bracket-newline': [ 1, 'consistent' ],
+    'array-bracket-newline': [1, 'consistent'],
     /* enforce line breaks between array elements */
-    'array-element-newline': [ 1, 'consistent' ],
+    'array-element-newline': [1, 'consistent'],
     /* Require parens in arrow function arguments */
-    'arrow-parens': [ 1, 'as-needed' ],
+    'arrow-parens': [1, 'as-needed'],
     /* Require space before/after arrow function’s arrow */
     'arrow-spacing': 1,
 
     /* Disallow or enforce spaces inside of blocks after opening block and before closing block */
-    'block-spacing': [ 1, 'always' ],
+    'block-spacing': [1],
 
     /* require or disallow trailing commas */
     // superseded by @typescript-eslint/comma-dangle
@@ -33,7 +34,7 @@ module.exports = {
     /* enforce consistent spacing before and after commas */
     'comma-spacing': 1,
     /* enforce consistent spacing inside computed property brackets */
-    'computed-property-spacing': [ 1, 'always' ],
+    'computed-property-spacing': [1],
 
     /* Require Dot Notation */
     'dot-notation': 1,
@@ -42,9 +43,9 @@ module.exports = {
     'eol-last': 1,
 
     /* require or disallow spacing between function identifiers and their invocations */
-    'func-call-spacing': [ 1, 'never' ],
+    'func-call-spacing': [1],
 
-    'indent': [ 1, 2, {FunctionDeclaration: {body: 1, parameters: 2}, ignoreComments: false} ],
+    'indent': [1, 2, {FunctionDeclaration: {body: 1, parameters: 2}, ignoreComments: false}],
 
     /* enforce consistent spacing between keys and values in object literal properties */
     'key-spacing': 1,
@@ -52,7 +53,7 @@ module.exports = {
     'keyword-spacing': 1,
 
     /* require or disallow an empty line between class members */
-    'lines-between-class-members': [ 1, 'always', {exceptAfterSingleLine: true} ],
+    'lines-between-class-members': [1, 'always', {exceptAfterSingleLine: true}],
 
     /* Require parentheses when invoking a constructor with no arguments */
     'new-parens': 1,
@@ -111,11 +112,11 @@ module.exports = {
     /* disallow whitespace before properties */
     'no-whitespace-before-property': 1,
 
-    'object-curly-spacing': [ 1, 'always' ],
+    'object-curly-spacing': [1],
     /* require or disallow method and property shorthand syntax for object literals */
     'object-shorthand': 1,
     /* require or disallow assignment operator shorthand where possible */
-    'operator-assignment': [ 1, 'always' ],
+    'operator-assignment': [1],
 
     /* Require using arrow functions for callbacks */
     'prefer-arrow-callback': 1,
@@ -131,8 +132,8 @@ module.exports = {
     'prefer-spread': 1,
 
     /* require quotes around object literal property names */
-    'quote-props': [ 1, 'consistent-as-needed' ],
-    'quotes': [ 1, 'single', {allowTemplateLiterals: true} ],
+    'quote-props': [1, 'consistent-as-needed'],
+    'quotes': [1, 'single', {allowTemplateLiterals: true}],
 
     /* Enforce spacing between rest and spread operators and their expressions */
     'rest-spread-spacing': 1,
@@ -140,21 +141,21 @@ module.exports = {
     'semi': 1,
     'semi-spacing': 1,
     /* enforce sorted import declarations within modules */
-    'sort-imports': [ 1, {ignoreCase: true} ],
-    'space-before-function-paren': [ 1, 'never' ],
+    'sort-imports': [1, {ignoreCase: true}],
+    'space-before-function-paren': [1],
     'space-before-blocks': 1,
     'space-in-parens': 1,
     'space-infix-ops': 1,
     /* enforce consistent spacing after the // or /* in a comment */
     'spaced-comment': 1,
-    'strict': [ 1, 'never' ],
+    'strict': [1, 'never'],
 
-    'unicode-bom': [ 1, 'never' ],
+    'unicode-bom': [1, 'never'],
 
     /* Require IIFEs to be Wrapped */
-    'wrap-iife': [ 1, 'inside' ],
+    'wrap-iife': [1, 'inside'],
 
     /* Require or disallow Yoda Conditions */
-    'yoda': [ 1, 'never' ],
+    'yoda': [1, 'never'],
   }
 };

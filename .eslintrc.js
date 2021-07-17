@@ -4,6 +4,6 @@ module.exports = {
     './src/eslint.js',
   ],
   parserOptions: {
-    project: [ './tsconfig.json', './src/tsconfig.json', './test/tsconfig.json' ],
+    project: ['./tsconfig.json', './src/tsconfig.json', './test/tsconfig.json'],
   }
 };

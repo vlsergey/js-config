@@ -13,7 +13,7 @@ module.exports = {
     'plugin:@typescript-eslint/recommended-requiring-type-checking',
   ],
 
-  plugins: [ '@typescript-eslint' ],
+  plugins: ['@typescript-eslint'],
 
   rules: {
 
@@ -28,13 +28,13 @@ module.exports = {
     'space-infix-ops': 'off',
 
     /* Require or disallow trailing comma */
-    '@typescript-eslint/comma-dangle': [ 1, {
+    '@typescript-eslint/comma-dangle': [1, {
       arrays: 'only-multiline',
       objects: 'only-multiline',
       imports: 'only-multiline',
       exports: 'only-multiline',
       functions: 'never'
-    } ],
+    }],
     /* Disallow unnecessary parentheses */
     '@typescript-eslint/no-extra-parens': 1,
     /* Disallow unused variables */
@@ -42,7 +42,7 @@ module.exports = {
     /* Enforce consistent spacing inside braces */
     '@typescript-eslint/object-curly-spacing': 1,
     /* Enforce the consistent use of either backticks, double, or single quotes */
-    '@typescript-eslint/quotes': [ 1, 'single', {allowTemplateLiterals: true} ],
+    '@typescript-eslint/quotes': [1, 'single', {allowTemplateLiterals: true}],
     /* Require or disallow semicolons instead of ASI */
     '@typescript-eslint/semi': 1,
     /* Enforces consistent spacing before function parenthesis */
@@ -53,16 +53,16 @@ module.exports = {
     /* TypeScript-specific rules */
 
     /* Requires using either T[] or Array<T> for arrays */
-    '@typescript-eslint/array-type': [ 1, {default: 'array', readonly: 'array'} ],
+    '@typescript-eslint/array-type': [1, {default: 'array', readonly: 'array'}],
 
     /* Enforces consistent usage of type imports */
-    '@typescript-eslint/consistent-type-imports': [ 1, {prefer: 'no-type-imports'} ],
+    '@typescript-eslint/consistent-type-imports': [1, {prefer: 'no-type-imports'}],
 
     /* Require a specific member delimiter style for interfaces and type literals */
-    '@typescript-eslint/member-delimiter-style': [ 1, {
+    '@typescript-eslint/member-delimiter-style': [1, {
       multiline: {delimiter: 'semi', requireLast: true},
       singleline: {delimiter: 'semi', requireLast: false},
-    } ],
+    }],
 
     /* Enforces using a particular method signature syntax */
     '@typescript-eslint/method-signature-style': 1,

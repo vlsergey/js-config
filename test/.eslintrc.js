@@ -1,4 +1,4 @@
-/* eslint-disable */
+/* eslint no-undef: 0 */
 module.exports = {
   env: {
     browser: true,
@@ -17,7 +17,7 @@ module.exports = {
   settings: {
     'import/resolver': {
       node: {
-        moduleDirectory: [ 'node_modules', 'src', 'test' ],
+        moduleDirectory: ['node_modules', 'src', 'test'],
       },
     },
   },
