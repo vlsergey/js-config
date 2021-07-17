@@ -11,14 +11,7 @@ module.exports = {
   },
 
   rules: {
-    'import/no-unused-modules': 0,
-  },
-
-  settings: {
-    'import/resolver': {
-      node: {
-        moduleDirectory: ['node_modules', 'src', 'test'],
-      },
-    },
+    // due to renderIntoDocument() usage
+    '@typescript-eslint/no-confusing-void-expression': 0,
   },
 };

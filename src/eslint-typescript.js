@@ -55,6 +55,12 @@ module.exports = {
     /* Requires using either T[] or Array<T> for arrays */
     '@typescript-eslint/array-type': [1, {default: 'array', readonly: 'array'}],
 
+    /* Enforce or disallow the use of the record type */
+    '@typescript-eslint/consistent-indexed-object-style': 1,
+
+    /* Consistent with type definition either interface or type */
+    '@typescript-eslint/consistent-type-definitions': 1,
+
     /* Enforces consistent usage of type imports */
     '@typescript-eslint/consistent-type-imports': [1, {prefer: 'no-type-imports'}],
 
@@ -67,6 +73,12 @@ module.exports = {
     /* Enforces using a particular method signature syntax */
     '@typescript-eslint/method-signature-style': 1,
 
+    /* Disallow non-null assertion in locations that may be confusing */
+    '@typescript-eslint/no-confusing-non-null-assertion': 1,
+
+    /* Requires expressions of type void to appear in statement position */
+    '@typescript-eslint/no-confusing-void-expression': 1,
+
     /* Flags unnecessary equality comparisons against boolean literals */
     '@typescript-eslint/no-unnecessary-boolean-literal-compare': 1,
 
@@ -76,8 +88,26 @@ module.exports = {
     /* Prefer usage of as const over literal type */
     '@typescript-eslint/prefer-as-const': 1,
 
+    /* Enforce includes method over indexOf method */
+    '@typescript-eslint/prefer-includes': 1,
+
+    /* Require the use of the namespace keyword instead of the module keyword to declare custom TypeScript modules */
+    '@typescript-eslint/prefer-namespace-keyword': 1,
+
+    /* Requires that private members are marked as readonly if they're never modified outside of the constructor */
+    '@typescript-eslint/prefer-readonly': 1,
+
+    /* Prefer using type parameter when calling Array#reduce instead of casting */
+    '@typescript-eslint/prefer-reduce-type-parameter': 1,
+
+    /* Enforce that RegExp#exec is used instead of String#match if no global flag is provided */
+    '@typescript-eslint/prefer-regexp-exec': 1,
+
     /* Enforce the use of String#startsWith and String#endsWith instead of other equivalent methods of checking substrings */
     '@typescript-eslint/prefer-string-starts-ends-with': 1,
+
+    /* Recommends using @ts-expect-error over @ts-ignore */
+    '@typescript-eslint/prefer-ts-expect-error': 1,
 
     /* Require consistent spacing around type annotations */
     '@typescript-eslint/type-annotation-spacing': 1,
