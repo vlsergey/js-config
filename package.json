@@ -1,6 +1,6 @@
 {
   "name": "@vlsergey/js-config",
-  "version": "11.0.0",
+  "version": "11.1.0",
   "description": "Common configuration files for JavaScript projects",
   "main": "lib/index.js",
   "scripts": {
